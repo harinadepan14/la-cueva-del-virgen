@@ -1,0 +1,130 @@
+/* Este código solo lo sabemos Dios y nosotros*/
+
+body {
+    font-family: cursive;
+    background-color: rgb(22, 22, 92);
+}
+
+h1 {
+    text-align: center;
+    animation-name: titulo;
+    animation-duration: 5s;
+    position: relative;
+    color: white;
+}
+
+@keyframes titulo {
+    0%{top: -1500px;}
+    100%{top: 0px; }
+    
+}
+
+h1:hover {
+    transform: scale(1.2);
+}
+
+.harina{
+    width: 425px;
+    height: 425px;
+    margin-top: 40px;
+    background-color: black;
+    gap: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 7px white;
+    animation-name: hola;
+    animation-duration: 5s;
+    position: relative;
+}
+
+@keyframes hola {
+    0% {right: 1500px;}
+    100% {right: 0px;}
+}
+
+.pan {
+    width: 425px;
+    height: 425px;
+    margin-top: 40px;
+    background-color: black;
+    gap: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 7px white;
+    animation-name: buenas;
+    animation-duration: 5s;
+    position: relative;
+}
+
+@keyframes buenas {
+    0% {left: 1500px;}
+    100% {left: 0px;}
+}
+
+.oso {
+    width: 425px;
+    height: 425px;
+    margin-top: 40px;
+    background-color: black;
+    gap: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 7px white;
+    animation-name: adios;
+    animation-duration: 5s;
+    position: relative;
+}
+
+@keyframes adios {
+    0% {right: 1500px;}
+    100% {right: 0px;}
+}
+
+
+.kevin {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 360px;
+    height: 200px;
+    margin-left: 32px ;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+p {
+    justify-content: center;
+    text-align: center;
+    margin: 5px 15px 5px 15px;
+    color: white;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    margin-left: 165px;
+    border-radius: 10px;
+    font-family: cursive;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(202, 171, 30);
+}
+
+button:active {
+    background-color: pink;
+    color: black;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+h2:hover {
+    transform: scale(1.2);
+}
+

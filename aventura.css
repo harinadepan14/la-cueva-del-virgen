@@ -1,0 +1,70 @@
+body {
+    background-image: url(https://images3.alphacoders.com/601/601997.jpg);
+    background-size: 100%;
+}
+    
+
+h1 {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    animation-name: titulo;
+    animation-duration: 5s;
+    position: relative;
+}
+
+@keyframes titulo {
+    0% {top: -300px;}
+    100% {top: 0px;}
+}
+
+h1:hover {
+    color:black;
+    transform: scale(1.5);
+}
+
+img {
+    width: 300px;;
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 10px black;
+
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+
+.primeros-juegos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: imagen imagen imagen;
+    justify-items: center;
+    align-items: center;
+    animation-name: primeros;
+    animation-duration: 5s;
+    position: relative;
+}
+
+@keyframes primeros {
+    0% {left: -1500px;}
+    100% {left: 0px;}
+}
+
+.segundos-juegos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: imagen imagen imagen;
+    justify-items: center;
+    align-items: center;
+    animation-name: segundos;
+    animation-duration: 5s;
+    position: relative;
+}
+
+@keyframes segundos {
+    0%{right: -1500px;}
+    100%{right: 0px;}
+}

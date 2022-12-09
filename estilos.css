@@ -1,0 +1,464 @@
+:root {
+    --main-color:  black;
+    --point-color: red;
+    --size: 5px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-size: 30px ;
+    text-align: center;
+    justify-content: center;
+}
+
+h2:hover {
+    transform: scale(1.5);
+    color:#751000;
+}
+
+h3 {
+    color:black;
+}
+
+h3:hover {
+    transform: scale(1.1);
+    color:#751000;
+}
+
+.titulo {
+    color: red;
+}
+
+
+.cargando {
+    
+    background-color: var(--main-color);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;  
+    z-index: 100000;
+    animation: desaparecer 1s forwards;
+}
+
+.puntos {
+    border-radius: 100%;
+    border: var(--size) solid var(--point-color);
+    margin: calc(var(--size)*2);
+
+}
+
+.puntos:nth-child(1) {
+    animation: preloader .6s ease-in-out alternate infinite;
+
+}
+
+.puntos:nth-child(2) {
+    animation: preloader .6s ease-in-out alternate .2s infinite;
+}
+
+.puntos:nth-child(3) {
+    animation: preloader .6s ease-in-out alternate .4s infinite;
+
+}
+
+@keyframes preloader {
+    100% { transform: scale(2); }
+  }
+
+
+@keyframes desaparecer {
+    0% {visibility:visible;}
+    100% {visibility: hidden;}
+    }
+
+header {
+    position: relative;
+    animation-name: parte-superior;
+    animation-duration:  4s;;
+}
+@keyframes parte-superior {
+    0% {top:-1000px;}
+    100% {top: 0px;}
+}
+  
+
+body {
+    font-family:cursive;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo {
+    color:white ;
+    font-size:30px ;
+    text-align:center ;
+    margin-bottom:60px ;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images4.alphacoders.com/936/936378.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;  
+}
+.logo {
+    width: 100px;
+    margin-left: 20px;
+}
+.bar-btn {
+    font-size: 25px;
+    color:#fff;
+    margin-right: 20px;
+    cursor:pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: all .5s;
+}
+.nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin:50px 0;
+    transition: all .5s;
+}
+.nav-menu li a {
+    color:#fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.nav-menu li a.active, .nav-menu li a:hover {
+    color:rgb(248,8,8);
+    transition: .3s;
+}
+
+#check {
+    display: none;
+}
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+    display: block;
+}
+.banner-text {
+    padding: 0 30px;
+    margin-top: 150px;
+    text-align: center;
+    color: #fff;
+}
+.banner-text h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.banner-text span {
+    color: rgb(248, 8, 8);
+}
+.banner-text h2 {
+    font-size:16px;
+    font-weight: 600;
+}
+.button1 {
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.button1:hover {
+    background-color: #fff;
+    color: rgb(248, 8, 8);
+    transition: .5s;
+}
+.button2 {
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color:#fff;
+    color: rgb(248, 8, 8);
+    border-radius: 5px;
+}
+.button2:hover {
+    background-color: rgb(248, 8, 8);
+    color:#fff;
+    transition: .5s;
+}
+ 
+
+#adios:hover { 
+
+    transform: scale(1.1);
+
+}
+
+.contenedor-sobre-nosotros {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.imagen-about-us {
+    width: 40%;
+    box-shadow: 7px 7px 7px ;
+
+}
+
+.sobre-nosotros .contenido-textos {
+    width: 100%;
+}
+.contenido-textos h3 {
+    margin-bottom: 15px ;
+}
+.contenido-textos h3 span{
+    background: #ff9203fb;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height:30px ;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(255, 4, 4, 0.5);
+    margin-right: 5px;
+    
+}
+.contenido-textos h3 {
+    text-decoration:double;
+    margin-left: 35px;
+}
+
+.contenido-textos p{
+    padding:0px 0px 30px 15px;
+    font-weight: 300;
+    text-align:justify ;
+    margin-left: 35px;
+}
+
+
+
+
+.categorias {
+    background:#BFBFBF;
+    background-size: 100%;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;   
+}
+
+.imagen-port {
+    width: 30%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 7px 7px 10px ;
+}
+.imagen-port> img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+    display: block;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);  
+    background: rgba(129, 6, 6, 0.854);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img {
+    width:50px ;
+}
+.hover-galeria p {
+    color: #fff;
+}
+.imagen-port:hover .hover-galeria  {
+    transform: scale(1);
+}
+
+
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards .card {
+    background: #0314ab;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius:5px ;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6)
+}
+.cards .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+.cards .card > .contenido-texto-card {
+    width: 60%;
+    color:#fff;
+}
+.cards .card > .contenido-texto-card p {
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+
+
+.about-services {
+    background:#D9D9D9;
+    background-size: 100%;
+    padding-bottom: 30px;
+}
+.servicio-cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.servicio-ind {
+    width: 28%;
+    text-align: center;
+}
+.servicio-ind img {
+    width: 90%;
+}
+.servicio-ind h3 {
+    margin: 10px 0;
+}
+.servicio-ind p {
+    font-weight: 300;
+    text-align: justify;
+}
+
+.servicio-ind:hover {
+    transform: scale(1.1);
+}
+
+
+
+.pie-pagina {
+    width: 100%;
+    background-color:#0a141d ;
+}
+.pie-pagina  .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2 {
+    color:#fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height:45px ;
+    line-height: 45px;
+    column-rule: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align:center ;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+@media screen and (max-width:800px) {
+    .pie-pagina  .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+}
+}
+
+.ocultar{
+    display: none;
+}
